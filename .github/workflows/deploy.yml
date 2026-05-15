@@ -1,0 +1,42 @@
+name: Deploy Blog
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    name: Build and deploy to jigsawflux.github.io/blog
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Docusaurus
+        run: npm run build
+
+      - name: Deploy to jigsawflux.github.io/blog
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          personal_token: ${{ secrets.DEPLOY_TOKEN }}
+          external_repository: JigsawFlux/jigsawflux.github.io
+          publish_branch: main
+          publish_dir: ./build
+          destination_dir: blog
+          commit_message: "chore: deploy blog build [skip ci]"
+          user_name: github-actions[bot]
+          user_email: github-actions[bot]@users.noreply.github.com

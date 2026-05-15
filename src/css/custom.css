@@ -1,0 +1,45 @@
+/* JigsawFlux brand colours — matches jigsawflux.org design system */
+:root {
+  --ifm-color-primary: #1e3a8a;
+  --ifm-color-primary-dark: #1a3278;
+  --ifm-color-primary-darker: #182e6f;
+  --ifm-color-primary-darkest: #13255b;
+  --ifm-color-primary-light: #22429c;
+  --ifm-color-primary-lighter: #2449a5;
+  --ifm-color-primary-lightest: #2a52b9;
+
+  --ifm-color-secondary: #14b8a6;
+
+  --ifm-font-family-base: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-weight: 700;
+  --ifm-code-font-size: 95%;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #5eead4;
+  --ifm-color-primary-dark: #3de4cb;
+  --ifm-color-primary-darker: #2de1c6;
+  --ifm-color-primary-darkest: #1cbda5;
+  --ifm-color-primary-light: #7eefdd;
+  --ifm-color-primary-lighter: #8ef1e1;
+  --ifm-color-primary-lightest: #bef7f0;
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Load Inter from Google Fonts — same as main jigsawflux.org site */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+/* Tag pills — match the teal accent */
+.tag_zVej {
+  border-color: var(--ifm-color-secondary);
+  color: var(--ifm-color-secondary);
+}
+
+/* Blog post card hover */
+article.margin-bottom--xl:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
