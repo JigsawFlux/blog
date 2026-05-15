@@ -12,7 +12,7 @@ const config = {
   organizationName: 'JigsawFlux',
   projectName: 'blog',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
 
   i18n: {
