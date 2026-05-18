@@ -8,7 +8,7 @@ tags: [local-llm, ollama, mcp, architecture, open-source]
 
 AI inference doesn't have to mean a cloud API call. This post walks through a spike I built to run a locally hosted language model through a clean, layered architecture using Ollama and the Model Context Protocol (MCP).
 
-*The full source is on [GitHub](https://github.com/JigsawFlux/ollama-claude). Contributions and feedback welcome.*
+*The full source is on [GitHub](https://github.com/JigsawFlux/ollama-mcp-starter). Contributions and feedback welcome.*
 
 <!-- truncate -->
 
@@ -310,4 +310,4 @@ This is a spike — a working proof of concept, not production software. The obv
 
 For JigsawFlux, the interesting application of this architecture is in tools for field teams and health workers — where data privacy matters, connectivity is unreliable, and a locally-running model on a shared device could provide genuine decision support.
 
-The full source is on [GitHub](https://github.com/JigsawFlux/ollama-claude). Contributions and feedback welcome.
+The full source is on [GitHub](https://github.com/JigsawFlux/ollama-mcp-starter). Contributions and feedback welcome.
