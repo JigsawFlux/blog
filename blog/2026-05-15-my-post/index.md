@@ -1,12 +1,14 @@
 ---
 slug: local-llm-ollama-mcp-spike
-title: Running a Local LLM with Ollama and MCP — A Architecture Spike
+title: Running a Local LLM with Ollama and MCP — An Architecture Spike
 date: 2026-05-15
 authors: [suresh]
 tags: [local-llm, ollama, mcp, architecture, open-source]
 ---
 
 AI inference doesn't have to mean a cloud API call. This post walks through a spike I built to run a locally hosted language model through a clean, layered architecture using Ollama and the Model Context Protocol (MCP).
+
+*The full source is on [GitHub](https://github.com/JigsawFlux/ollama-claude). Contributions and feedback welcome.*
 
 <!-- truncate -->
 
