@@ -297,7 +297,7 @@ The chat tab lets you send prompts directly to the model. The health indicator i
 
 The below was the response from Microsoft Co-pilot
 
-![[copilot.png]]
+![Demo copilot](./copilot.png)
 
 ## What's Next
 
