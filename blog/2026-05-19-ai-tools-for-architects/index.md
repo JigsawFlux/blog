@@ -389,12 +389,12 @@ Copilot now auto-runs security scanning (code, secrets, deps) in the agent workf
 
 *The full source is on [GitHub](https://github.com/JigsawFlux/kafka-optimize-public-transport). See the docs folder. Contributions and feedback welcome.*
 
-[ADR - Event Bus](./docs/adr/ADR-001-kafka-as-central-event-bus.md)
-[ADR - Schema Registry](./docs/adr/ADR-002-avro-schema-registry.md)
-[ADR - Kafka connect](./docs/adr/ADR-003-kafka-connect-jdbc-postgres.md)
-[ADR -KSQL](./docs/adr/ADR-004-dual-stream-processing-faust-ksql.md)
-[ADR - Prpoducer](./docs/adr/ADR-005-rest-proxy-for-weather-producer.md)
-[ADR - Dashboard](./docs/adr/ADR-006-tornado-async-dashboard.md)
+- [ADR - Event Bus](./docs/adr/ADR-001-kafka-as-central-event-bus.md)
+- [ADR - Schema Registry](./docs/adr/ADR-002-avro-schema-registry.md)
+- [ADR - Kafka connect](./docs/adr/ADR-003-kafka-connect-jdbc-postgres.md)
+- [ADR -KSQL](./docs/adr/ADR-004-dual-stream-processing-faust-ksql.md)
+- [ADR - Prpoducer](./docs/adr/ADR-005-rest-proxy-for-weather-producer.md)
+- [ADR - Dashboard](./docs/adr/ADR-006-tornado-async-dashboard.md)
 
 [Architecture](./docs/architecture.md)
 [Trade off Analyis](./docs/trade-off-analysis.md)
