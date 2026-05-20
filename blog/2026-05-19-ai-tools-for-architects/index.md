@@ -1,20 +1,20 @@
 ---
-slug: ai-for-architects beyond code
-title: All tools for architect - My experiments
+slug: ai-for-architects-beyond-code
+title: Claude, Copilot & Gemini for Architects — A 2026 Field Guide
 date: 2026-05-20
 authors: [suresh]
 tags: [gemini, architecture, claude, copilot, ai-beyond-coding]
 ---
 
 
-## AI Tools for Architects: Beyond Code Generation - Evaluation of alternatives and Suitability
+## AI Tools for Architects: Beyond Code Generation
 
 > **Practical use cases for Solution, Infrastructure & Enterprise Architects**
 > Featuring **Claude**, **GitHub Copilot**, and **Gemini + Antigravity**
 
-The rapid explosion of number LLMs and AI tools to assist software engineers and architects are kind of mind boggling. Selecting the righ tools for each use case can be a daunding task. I have been experimenting with three super powers, Claude Code, GitHub Copilot + Vs Code and Antigravity+Gemini. The variations such as using Cursor with Claude can easily be derived from the below.
+The rapid explosion of LLMs and AI tools to assist software engineers and architects is mind-boggling. Selecting the right tools for each use case can be a daunting task. I have been experimenting with three superpowers: Claude Code, GitHub Copilot + VS Code, and Antigravity + Gemini. Variations such as using Cursor with Claude can easily be derived from the below.
 
-This article also shares a GitHub repo where it demonstrate some of the architecture use cases
+This article also shares a GitHub repo that demonstrates some of the architecture use cases.
 
 ---
 
@@ -22,15 +22,16 @@ This article also shares a GitHub repo where it demonstrate some of the architec
 
 | #   | Slide                                                                                       | Topic                                            |
 | --- | ------------------------------------------------------------------------------------------- | ------------------------------------------------ |
-| 1   | [Title](#1-title)                                                                           | AI Tools for Architects — Beyond Code Generation |
+| 1   | [Three Superpowers](#1-three-superpowers)                                                   | AI Tools for Architects — Beyond Code Generation |
 | 2   | [What Changed](#2-what-changed-the-20252026-leap)                                           | The 2025–2026 Leap                               |
 | 3   | [Three Superpowers](#3-three-tools-three-architectural-superpowers)                         | Claude · Copilot · Gemini + Antigravity          |
 | 4   | [Use Case Matrix](#4-architectural-use-cases-at-a-glance-2026)                              | Architect use cases rated across all three tools |
-| 5   | [Demo 1: Claude](#5-demo-1--claude--architecture-reasoner)                                  | Reverse-engineer architecture → ADR              |
-| 6   | [Demo 2: Copilot](#6-demo-2--github-copilot--agentic-devops-partner)                        | IaC scaffold + security scan + coding agent      |
-| 7   | [Demo 3: Gemini + Antigravity](#7-demo-3--gemini--antigravity--agent-first-cloud-architect) | Upload diagram → component spec + GCP mapping    |
+| 5   | [Case Study: Claude](#5-case-study-claude--architecture-reasoner)                           | Reverse-engineer architecture → ADR              |
+| 6   | [Case Study: Copilot](#6-case-study-2--github-copilot--agentic-devops-partner)              | IaC scaffold + security scan + coding agent      |
+| 7   | [Case Study: Gemini](#7-case-study-3--gemini--antigravity--agent-first-cloud-architect)     | Upload diagram → component spec + GCP mapping    |
 | 8   | [Elevated Use Cases](#8-elevated-use-cases-docs-security--togaf)                            | ADRs, Security, TOGAF, POC/MVP                   |
 | 9   | [Workflow](#9-the-ai-augmented-architecture-workflow-2026)                                  | Discover → Design → Build → Validate             |
+|     | [Case Study Output](#case-study-output)                                                     | ADRs, Architecture & Trade-off docs on GitHub    |
 | 10  | [Start Today](#10-start-today)                                                              | This Week / This Month / This Quarter actions    |
 
 ---
@@ -199,7 +200,7 @@ migrating to async event-driven messaging.
 **Study  A (Web):** Create a Claude Project, upload the codebase as context, then prompt.
 **Study B (CLI):** Use Claude Code in your terminal — it can read files, run commands, and iterate.
 
-Key obsevations:
+Key observations:
 - Claude's 200K token context handles most real-world repos in one session
 - Projects provide persistent context — come back tomorrow and it still knows your codebase
 - Multi-agent architecture means Claude spawns sub-agents for parallel analysis
@@ -384,23 +385,16 @@ Copilot now auto-runs security scanning (code, secrets, deps) in the agent workf
 
 ## Case study output
 
-<details>
-<summary> Case study output</summary>
-
 *The full source is on [GitHub](https://github.com/JigsawFlux/kafka-optimize-public-transport). See the docs folder. Contributions and feedback welcome.*
 
 - [ADR - Event Bus](./docs/adr/ADR-001-kafka-as-central-event-bus.md)
 - [ADR - Schema Registry](./docs/adr/ADR-002-avro-schema-registry.md)
 - [ADR - Kafka connect](./docs/adr/ADR-003-kafka-connect-jdbc-postgres.md)
-- [ADR -KSQL](./docs/adr/ADR-004-dual-stream-processing-faust-ksql.md)
-- [ADR - Prpoducer](./docs/adr/ADR-005-rest-proxy-for-weather-producer.md)
+- [ADR - KSQL](./docs/adr/ADR-004-dual-stream-processing-faust-ksql.md)
+- [ADR - Producer](./docs/adr/ADR-005-rest-proxy-for-weather-producer.md)
 - [ADR - Dashboard](./docs/adr/ADR-006-tornado-async-dashboard.md)
 
-[Architecture](./docs/architecture.md)
-[Trade off Analyis](./docs/trade-off-analysis.md)
-
-
-</details>
+[Architecture](./docs/architecture.md) | [Trade-off Analysis](./docs/trade-off-analysis.md)
 
 ## 10. Start Today
 
