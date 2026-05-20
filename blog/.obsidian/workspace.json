@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "8e8d46efc9ffb54d",
+        "id": "da26aa8fedd25bdc",
         "type": "tabs",
         "children": [
           {
-            "id": "c972eb6a209a9ffc",
+            "id": "5ae9de984bee19a8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2026-05-15-my-post/index.md",
+                "file": "2026-05-19-medical-data/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -94,14 +94,14 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2026-05-15-my-post/index.md",
+                "file": "2026-05-19-medical-data/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-coming-in",
               "title": "Backlinks for index"
@@ -113,9 +113,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2026-05-15-my-post/index.md",
+                "file": "2026-05-19-medical-data/index.md",
                 "linksCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
               "title": "Outgoing links from index"
@@ -165,12 +165,12 @@
               "title": "Outline of index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,14 +183,28 @@
       "bases:Create new base": false
     }
   },
-  "active": "c972eb6a209a9ffc",
+  "active": "5ae9de984bee19a8",
   "lastOpenFiles": [
-    "2026-05-15-my-post/index.md.tmp.34056.76c263fe5846",
-    "2026-05-15-my-post/copilot.png",
+    "2026-05-19-medical-data/images/slide3-02.jpg",
+    "2026-05-19-medical-data/index.md",
+    "2026-05-19-medical-data/README.md",
+    "2026-05-15-welcome.md",
+    "2026-05-19-medical-data/images/slide3-10.jpg",
+    "2026-05-19-medical-data/images/slide3-09.jpg",
+    "2026-05-19-medical-data/images/slide3-08.jpg",
+    "2026-05-19-medical-data/images/slide3-07.jpg",
+    "2026-05-19-medical-data/images/slide3-06.jpg",
+    "2026-05-19-medical-data/images/slide3-05.jpg",
+    "2026-05-19-medical-data/images/slide3-04.jpg",
+    "2026-05-19-medical-data/images/slide3-03.jpg",
+    "2026-05-19-medical-data/images/slide3-01.jpg",
+    "2026-05-19-medical-data/images",
     "2026-05-15-my-post/index.md",
-    "2026-05-15-my-post/architecture.png",
-    "2026-05-15-my-post/demo-screenshot.png",
-    "2026-05-15-my-post/demo-screenshot.jpg",
+    "2026-05-19-medical-data/AI_Architecture_Presentation.pptx",
+    "2026-05-19-medical-data/files.zip",
+    "2026-05-19-medical-data",
+    "2026-05-19-",
+    "2026-05-15-my-post/index.md.tmp.34056.76c263fe5846",
     "2026-05-15-my-post/index.md.tmp.34056.5058c31c9f4b",
     "2026-05-15-my-post/index.md.tmp.34056.928d411f865d"
   ]
