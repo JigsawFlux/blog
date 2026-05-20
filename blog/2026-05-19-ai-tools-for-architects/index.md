@@ -14,7 +14,7 @@ tags: [gemini, architecture, claude, copilot, ai-beyond-coding]
 
 The rapid explosion of LLMs and AI tools to assist software engineers and architects is mind-boggling. Selecting the right tools for each use case can be a daunting task. I have been experimenting with three superpowers: Claude Code, GitHub Copilot + VS Code, and Antigravity + Gemini. Variations such as using Cursor with Claude can easily be derived from the below.
 
-This article also shares a GitHub repo that demonstrates some of the architecture use cases.
+This article also shares a [GitHub](https://github.com/JigsawFlux/kafka-optimize-public-transport) repo that demonstrates some of the architecture use cases.
 
 ---
 
