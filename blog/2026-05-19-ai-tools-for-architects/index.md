@@ -38,7 +38,7 @@ This article also shares a GitHub repo where it demonstrate some of the architec
 ## 1. Three superpowers
 
 <details>
-<summary>🎤 Speaker Notes</summary>
+<summary> Notes</summary>
 
 All three tools — Claude, GitHub Copilot, and Google Gemini (including Google's new Antigravity IDE) — have evolved massively in the past year. They're no longer just code generators. They now have agentic capabilities, long context windows, multimodal understanding, and integrated security scanning. This talk shows how architects can leverage each tool's unique strengths for elevated use cases: reverse-engineering architecture, generating TOGAF artefacts, security analysis, and building POC/SPIKEs. Note: Antigravity is Google's agent-first IDE (VS Code fork) released Nov 2025 alongside Gemini 3 — it's the IDE where Gemini truly comes alive.
 
@@ -366,17 +366,33 @@ Copilot auto-scans for security. Claude generates threat models. Gemini reviews 
 
 The workflow has evolved from 'copy-paste into chat' to a genuine multi-tool architecture workflow.
 
-**Discover:** Claude Projects maintain context across sessions — upload your codebase once, query it for weeks. Gemini's 1M tokens let you feed an entire repo + existing docs.
+### Discover
+Claude Projects maintain context across sessions — upload your codebase once, query it for weeks. Gemini's 1M tokens let you feed an entire repo + existing docs.
 
-**Design:** Claude generates structured ADRs and trade-off docs. Copilot agent mode scaffolds IaC with self-healing.
+### Design
+Claude generates structured ADRs and trade-off docs. Copilot agent mode scaffolds IaC with self-healing.
 
-**Build:** The biggest 2026 change. Copilot's coding agent takes GitHub issues and autonomously creates PRs. Claude Code runs in your terminal as a full agentic tool. Gemini Code Assist has agent mode in the IDE.
+### Build
+The biggest 2026 change. Copilot's coding agent takes GitHub issues and autonomously creates PRs. Claude Code runs in your terminal as a full agentic tool. Gemini Code Assist has agent mode in the IDE.
 
-**Validate:** Copilot now auto-runs security scanning (code, secrets, deps) in the agent workflow. This is genuinely new — security is shifting left into the AI agent itself.
+### Validate
+Copilot now auto-runs security scanning (code, secrets, deps) in the agent workflow. This is genuinely new — security is shifting left into the AI agent itself.
 
 </details>
 
 ---
+
+## Case study output
+
+import adr from './docs/adr/ADR-001-kafka-as-central-event-bus.md'
+
+<details>
+
+**AI Generated ADR**
+
+{adr}
+
+</details>
 
 ## 10. Start Today
 
