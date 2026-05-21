@@ -1,6 +1,6 @@
 ---
 slug: ai-for-architects-beyond-code
-title: Claude, Copilot & Gemini for Architects — A 2026 Field Guide
+title: Claude™, Copilot™ & Gemini™ for Architects — A 2026 Field Guide
 date: 2026-05-20
 authors: [suresh]
 tags: [gemini, architecture, claude, copilot, ai-beyond-coding]
@@ -10,9 +10,9 @@ tags: [gemini, architecture, claude, copilot, ai-beyond-coding]
 ## AI Tools for Architects: Beyond Code Generation
 
 > **Practical use cases for Solution, Infrastructure & Enterprise Architects**
-> Featuring **Claude**, **GitHub Copilot**, and **Gemini + Antigravity**
+> Featuring **Claude™**, **GitHub Copilot™**, and **Gemini™ + Antigravity™**
 
-The rapid explosion of LLMs and AI tools to assist software engineers and architects is mind-boggling. Selecting the right tools for each use case can be a daunting task. I have been experimenting with three superpowers: Claude Code, GitHub Copilot + VS Code, and Antigravity + Gemini. Variations such as using Cursor with Claude can easily be derived from the below.
+The rapid explosion of LLMs and AI tools to assist software engineers and architects is mind-boggling. Selecting the right tools for each use case can be a daunting task. I have been experimenting with three superpowers: Claude Code™, GitHub Copilot™ + VS Code, and Antigravity™ + Gemini™. Variations such as using Cursor with Claude™ can easily be derived from the below.
 
 This article also shares a [GitHub](https://github.com/JigsawFlux/kafka-optimize-public-transport) repo that demonstrates some of the architecture use cases.
 
@@ -22,7 +22,7 @@ This article also shares a [GitHub](https://github.com/JigsawFlux/kafka-optimize
 
 ## Table of Contents
 
-| #   | Slide                                                                                       | Topic                                            |
+| #   | Section                                                                                       | Topic                                            |
 | --- | ------------------------------------------------------------------------------------------- | ------------------------------------------------ |
 | 1   | [Three Superpowers](#1-three-superpowers)                                                   | AI Tools for Architects — Beyond Code Generation |
 | 2   | [What Changed](#2-what-changed-the-20252026-leap)                                           | The 2025–2026 Leap                               |
@@ -40,9 +40,12 @@ This article also shares a [GitHub](https://github.com/JigsawFlux/kafka-optimize
 
 ## 1. Three superpowers
 
-### Notes
+<details>
+   <summary>From Generators to Agents</summary>
 
 All three tools — Claude, GitHub Copilot, and Google Gemini (including Google's new Antigravity IDE) — have evolved massively in the past year. They're no longer just code generators. They now have agentic capabilities, long context windows, multi-modal understanding, and integrated security scanning. This talk shows how architects can leverage each tool's unique strengths for elevated use cases: reverse-engineering architecture, generating TOGAF artefacts, security analysis, and building POC/SPIKEs. Note: Antigravity is Google's agent-first IDE (VS Code fork) released Nov 2025 alongside Gemini 3 — it's the IDE where Gemini truly comes alive.
+
+</details>
 
 ![Slide 1 — Title](images/slide3-01.jpg)
 
@@ -50,7 +53,7 @@ All three tools — Claude, GitHub Copilot, and Google Gemini (including Google'
 
 ARCHITECTURE × ARTIFICIAL INTELLIGENCE
 
-Three tools, differentiated by strength: **Claude** · **GitHub Copilot** · **Gemini + Antigravity**
+Three tools, differentiated by strength: **Claude™** · **GitHub Copilot™** · **Gemini™ + Antigravity™**
 
 
 
@@ -76,9 +79,12 @@ Copilot now runs code scanning, secret scanning, and dependency checks inside it
 
 > *These capabilities move AI tools from 'coding assistants' to 'architecture collaborators'.*
 
-### Key message
+<details>
+   <summary>Transformative changes in Agentic mode</summary>
 
 Key message: since late 2025, these are fundamentally different tools than what most architects tried a year ago. The context window expansion is particularly transformative — Gemini's 1M tokens means you can feed an entire microservices codebase. Claude's 200K tokens handles most real-world repos. And agentic mode means the tool doesn't just suggest — it plans, executes, and self-corrects. For architects, this means tasks like 'understand this legacy system' or 'generate a threat model' are now genuinely viable.
+
+</details>
 
 ---
 
@@ -86,7 +92,7 @@ Key message: since late 2025, these are fundamentally different tools than what 
 
 ![Slide 3 — Three Superpowers](images/slide3-03.jpg)
 
-### Claude — *The Architecture Reasoner*
+### Claude™ — *The Architecture Reasoner*
 
 - Deep reasoning + 200K context
 - Claude Code: agentic CLI (shell + files)
@@ -96,7 +102,7 @@ Key message: since late 2025, these are fundamentally different tools than what 
 
 **Sample Use cases :** Reverse-engineer codebase → Mermaid diagram + ADR
 
-### GitHub Copilot — *The Agentic DevOps Partner*
+### GitHub Copilot™ — *The Agentic DevOps Partner*
 
 - Coding agent: assign issues → auto-PRs
 - Agent mode: multi-file edits + self-healing
@@ -106,7 +112,7 @@ Key message: since late 2025, these are fundamentally different tools than what 
 
 **Sample Use cases:** IaC scaffold + security scan + code explanation
 
-### Gemini + Antigravity — *The Agent-First Cloud Architect*
+### Gemini™ + Antigravity™ — *The Agent-First Cloud Architect*
 
 - 1M+ token context (entire codebase analysis)
 - Antigravity IDE: up to 5 parallel agents
@@ -116,7 +122,8 @@ Key message: since late 2025, these are fundamentally different tools than what 
 
 **Sample Use case:** Upload diagram → component spec + GCP mapping
 
-### Recent Updates - 2026
+<details>
+   <summary>Recent Updates - 2026</summary>
 
 Updated differentiation for 2026:
 
@@ -125,6 +132,8 @@ Updated differentiation for 2026:
 **COPILOT:** Now has a full coding agent that can be assigned GitHub issues and autonomously creates PRs. Agent mode does multi-file edits with self-healing. Built-in security scanning (code scanning, secret scanning, dependency checks) runs automatically. Multi-model support means you can use Claude or Gemini models inside Copilot.
 
 **GEMINI + ANTIGRAVITY:** 1M+ token context is the headline differentiator for architecture work. Gemini Code Assist now has agent mode in the IDE plus automated PR reviews on GitHub. Native multimodality means you can upload whiteboard photos, Visio diagrams, and architecture screenshots. Gemini 3.1 Pro offers frontier-class reasoning. Antigravity is Google's agent-first IDE — a VS Code fork with a Manager View for up to 5 parallel agents and a built-in Chrome browser for visual verification.
+
+</details>
 
 ---
 
@@ -143,9 +152,12 @@ Updated differentiation for 2026:
 
 > *Key insight: the tools have converged in many areas. The differentiator is now where each tool lives — your terminal, your IDE, or your browser.*
 
-### 2026 Evolution
+<details>
+   <summary> Tools integration with IDE Evolution</summary>
 
 Updated matrix reflects 2026 reality: the tools have converged significantly. All three now have agent modes. All can do code explanation and security analysis. The real differentiators are: WHERE the tool lives (terminal/CLI for Claude Code, IDE for Copilot, browser+IDE+cloud for Gemini), CONTEXT SIZE (Gemini wins with 1M tokens), REASONING DEPTH (Claude wins for structured architectural analysis), and WORKFLOW INTEGRATION (Copilot wins — it's embedded in GitHub issues, PRs, and CI/CD).
+
+</details>
 
 ---
 
@@ -182,11 +194,12 @@ migrating to async event-driven messaging.
 
 **Output:** Architecture narrative · C4 Mermaid diagram · MADR ADR · Improvement priorities
 
-### Case Study
+<details>
+   <summary>Claude Case Study</summary>
 
 **1 — Claude** (claude.ai or Claude Code CLI).
 
-**Study  A (Web):** Create a Claude Project, upload the codebase as context, then prompt.
+**Study A (Web):** Create a Claude Project, upload the codebase as context, then prompt.
 **Study B (CLI):** Use Claude Code in your terminal — it can read files, run commands, and iterate.
 
 Key observations:
@@ -196,7 +209,9 @@ Key observations:
 - Claude excels at structured reasoning: ADRs, trade-off docs, TOGAF artefacts
 - Mention Claude Code's agentic capabilities: it can read your repo, run tests, and generate diagrams
 
-**IMPORTANT:** This has been a  'thinking partner' study — Claude's strength is deep architectural reasoning, not just code generation.
+**IMPORTANT:** This has been a 'thinking partner' study — Claude's strength is deep architectural reasoning, not just code generation.
+
+</details>
 
 ---
 
@@ -222,7 +237,8 @@ Key observations:
 
 > *2026 update: Copilot now supports multi-model (GPT, Claude, Gemini), MCP integration, and runs in VS Code, JetBrains, Eclipse, and Xcode.*
 
-### Observations
+<details>
+   <summary>*GitHub Copilo Scenarios</summary>
 
 **GitHub Copilot** in VS Code + GitHub.
 
@@ -236,6 +252,8 @@ Key 2026 updates to mention:
 - Agentic code review: reviews now gather full project context before suggesting changes
 - Available in VS Code, JetBrains, Eclipse, Xcode
 - Coding agent runs on GitHub Actions infrastructure
+
+</details>
 
 ---
 
@@ -260,7 +278,8 @@ Key 2026 updates to mention:
 
 > *Antigravity: free public preview. VS Code fork — your extensions carry over. Powered by Gemini 3.1 Pro + supports Claude Sonnet/Opus.*
 
-### Observations and Notes
+<details>
+   <summary>Gemini & Antigravity</summary>
 
 **DEMO 3 — Gemini + Antigravity IDE.**
 
@@ -277,6 +296,8 @@ For the demo: open Antigravity, upload an architecture diagram to Gemini, show t
 Key observations for architects: Antigravity shifts your role from 'writer of code' to 'mission controller'. You direct agents, review their artifacts, and focus on architectural decisions. This is the closest any tool comes to the architect-as-orchestrator paradigm.
 
 Note on Gemini ecosystem: Antigravity (IDE), Gemini Code Assist (IDE extension for VS Code/JetBrains), Gemini CLI (terminal tool), Gemini web app (browser). Each serves a different workflow.
+
+</details>
 
 ---
 
@@ -300,7 +321,8 @@ Claude reasons about ArchiMate-aligned artefacts across all four TOGAF layers wi
 
 Copilot's coding agent builds features from issues. Claude Code scaffolds and tests full projects in your terminal. Gemini's agent mode builds inside the IDE. Assign the boring parts to AI, focus on design.
 
-### Description
+<details>
+   <summary>ADR, Security, TOGAF & MVP</summary>
 
 These four tiles represent the highest-value use cases beyond coding.
 
@@ -311,6 +333,8 @@ These four tiles represent the highest-value use cases beyond coding.
 **TOGAF:** Claude for reasoning, Gemini for multimodal input (existing diagrams + requirements docs).
 
 **POC/MVP:** All three tools now have genuine agentic build capabilities. Copilot's coding agent is particularly strong here — assign an issue, come back to a PR.
+
+</details>
 
 ---
 
@@ -340,7 +364,8 @@ Copilot auto-scans for security. Claude generates threat models. Gemini reviews 
 - Combine tools: Gemini for intake, Claude for reasoning, Copilot for implementation and security
 - Treat AI output as a first draft. Review like you'd review a junior architect's work — verify, refine, approve.
 
-### Notes
+<details>
+   <summary>DDBV cycle - Discover,Design,Build, & Validate </summary>
 
 The workflow has evolved from 'copy-paste into chat' to a genuine multi-tool architecture workflow.
 
@@ -355,6 +380,8 @@ The biggest 2026 change. Copilot's coding agent takes GitHub issues and autonomo
 
 #### Validate
 Copilot now auto-runs security scanning (code, secrets, deps) in the agent workflow. This is genuinely new — security is shifting left into the AI agent itself.
+
+</details>
 
 ---
 
@@ -401,7 +428,8 @@ Copilot now auto-runs security scanning (code, secrets, deps) in the agent workf
 
 **Let's build something together.**
 
-### Questions and Concerns
+<details>
+   <summary>Concerns</summary>
 
 - **'Is our code safe?'** — All three offer enterprise tiers with data protection. Don't paste proprietary code into free consumer tiers. Claude Enterprise, Copilot Enterprise, and Gemini Enterprise all have no-training guarantees.
 - **'What about hallucinations?'** — Treat AI output like a junior colleague's work. Always validate. The agentic tools are getting better at self-correction (Copilot's coding agent runs its own code review + security scan before PRs).
@@ -410,19 +438,23 @@ Copilot now auto-runs security scanning (code, secrets, deps) in the agent workf
 - **'What's the difference between Antigravity and Gemini Code Assist?'** — Antigravity is a full standalone IDE (agent-first). Gemini Code Assist is an extension for existing IDEs (VS Code, JetBrains). Use Antigravity for greenfield/agent-heavy work, Code Assist for day-to-day coding in your existing setup.
 - **Costs:** Claude Pro ~£20/mo, Copilot from £8/mo, Antigravity free in preview, Gemini Code Assist has a free tier.
 
+</details>
+
 ---
 
 ## Resources & Links
 
 | Tool | Link | Notes |
 |------|------|-------|
-| Claude | [claude.ai](https://claude.ai) | Web app, Projects, 200K context |
-| Claude Code | [code.claude.com](https://code.claude.com) | Agentic CLI for terminal |
-| GitHub Copilot | [github.com/features/copilot](https://github.com/features/copilot) | IDE + Coding Agent + Security |
-| Google Antigravity | [antigravity.google](https://antigravity.google) | Agent-first IDE (VS Code fork) |
-| Gemini Code Assist | [cloud.google.com/gemini/docs/codeassist](https://cloud.google.com/gemini/docs/codeassist/overview) | IDE extension for VS Code/JetBrains |
-| Gemini | [gemini.google.com](https://gemini.google.com) | Web app, 1M+ context, multimodal |
+| Claude™ | [claude.ai](https://claude.ai) | Web app, Projects, 200K context |
+| Claude Code™ | [code.claude.com](https://code.claude.com) | Agentic CLI for terminal |
+| GitHub Copilot™ | [github.com/features/copilot](https://github.com/features/copilot) | IDE + Coding Agent + Security |
+| Google Antigravity™ | [antigravity.google](https://antigravity.google) | Agent-first IDE (VS Code fork) |
+| Gemini Code Assist™ | [cloud.google.com/gemini/docs/codeassist](https://cloud.google.com/gemini/docs/codeassist/overview) | IDE extension for VS Code/JetBrains |
+| Gemini™ | [gemini.google.com](https://gemini.google.com) | Web app, 1M+ context, multimodal |
 
 ---
 
 *Created in May 2026. Content reflects tool capabilities as of this date — these tools evolve rapidly.*
+
+*Trademark notice: Claude, Claude Code, GitHub Copilot, GitHub, Gemini, Gemini Code Assist, Antigravity, and related product names are trademarks of their respective owners.*
