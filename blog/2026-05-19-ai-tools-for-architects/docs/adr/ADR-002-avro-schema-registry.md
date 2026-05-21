@@ -1,5 +1,7 @@
 # ADR-002: Avro Schemas + Confluent Schema Registry for Message Contracts
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team

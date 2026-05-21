@@ -1,5 +1,7 @@
 # Architectural Trade-off Analysis — CTA Public Transport Optimisation System
 
+<!-- truncate -->
+
 **Version:** 1.0
 **Date:** 2026-03-12
 **Authors:** Architecture Review (reverse-engineered from codebase)

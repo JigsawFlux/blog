@@ -1,5 +1,7 @@
 # ADR-003: Kafka Connect JDBC Source for PostgreSQL Station Data
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team

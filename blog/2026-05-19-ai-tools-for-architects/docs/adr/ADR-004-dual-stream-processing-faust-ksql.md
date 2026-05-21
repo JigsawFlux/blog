@@ -1,5 +1,7 @@
 # ADR-004: Dual Stream-Processing Engines — Faust (Python) + KSQL
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team

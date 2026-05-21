@@ -95,7 +95,7 @@ const config = {
           },
           {
             label: 'RSS Feed',
-            href: '/blog/rss.xml',
+            href: '/rss.xml',
           },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} JigsawFlux. Built with Docusaurus.`,

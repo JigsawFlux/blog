@@ -1,5 +1,7 @@
 # ADR-005: Kafka REST Proxy for the Weather Producer
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team

@@ -1,5 +1,7 @@
 # Architecture Document — CTA Public Transport Optimisation System
 
+<!-- truncate -->
+
 **Version:** 1.0
 **Date:** 2026-03-12
 **Status:** Baselined

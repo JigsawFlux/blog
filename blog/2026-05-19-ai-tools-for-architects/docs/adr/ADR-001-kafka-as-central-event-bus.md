@@ -1,5 +1,7 @@
 # ADR-001: Apache Kafka as the Central Event Bus
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team

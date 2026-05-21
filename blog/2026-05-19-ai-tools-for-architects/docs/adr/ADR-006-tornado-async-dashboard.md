@@ -1,5 +1,7 @@
 # ADR-006: Tornado Async Web Server for the Real-Time Transit Dashboard
 
+<!-- truncate -->
+
 **Date:** 2026-03-12
 **Status:** Accepted
 **Deciders:** Engineering Team
