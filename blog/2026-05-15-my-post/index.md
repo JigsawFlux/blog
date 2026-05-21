@@ -264,11 +264,13 @@ The project structure looks like this:
 
 ```text
 ollama-claude/
-├── mcp-server/     # MCP server + Ollama adapter (TypeScript)
-├── backend/        # Express API + MCP client session (TypeScript)
-├── frontend/       # Static UI (HTML/CSS/JS)
-├── start.sh        # Unix startup script
-└── start.bat       # Windows startup script
+├── mcp-server/           # MCP server + Ollama adapter (TypeScript)
+├── backend/
+│   ├── ...               # Express API + MCP client session (TypeScript)
+│   └── k8s-deployment/   # Kubernetes manifests for MicroK8s
+├── frontend/             # Static UI (HTML/CSS/JS)
+├── start.sh              # Unix startup script
+└── start.bat             # Windows startup script
 ```
 
 To get started:
@@ -284,6 +286,35 @@ start.bat           # Windows
 ```
 
 Then open `http://localhost:3000` in your browser.
+
+## Deploying on Kubernetes (MicroK8s)
+
+The `backend/k8s-deployment/` folder contains production-ready manifests for running the Ollama stack on MicroK8s with MetalLB and Nginx ingress. The key files are:
+
+| Manifest | Purpose |
+| -------- | ------- |
+| `ollama-stack.yaml` | `ollama` namespace, 50 Gi PVC, Ollama StatefulSet, ClusterIP service |
+| `ollama-automated.yaml` | Variant that pre-pulls `llama3.1:8b` via an `initContainer` on first boot |
+| `open-webui-stack.yaml` | Open WebUI deployment with 10 Gi PVC, pointed at the internal Ollama service |
+| `ollama-ingress.yaml` | Exposes Ollama at `ollama.local` |
+| `open-webui-ingress.yaml` | Exposes Open WebUI at `ai.local` |
+| `dashboard-ingress.yaml` | Exposes the Kubernetes dashboard at `dashboard.local` (SSL passthrough) |
+| `ingress-lb.yaml` | LoadBalancer service for the Nginx ingress controller (ports 80/443) |
+
+Apply them in order:
+
+```bash
+kubectl apply -f backend/k8s-deployment/ollama-stack.yaml
+kubectl apply -f backend/k8s-deployment/open-webui-stack.yaml
+kubectl apply -f backend/k8s-deployment/ollama-ingress.yaml
+kubectl apply -f backend/k8s-deployment/open-webui-ingress.yaml
+kubectl apply -f backend/k8s-deployment/dashboard-ingress.yaml
+kubectl apply -f backend/k8s-deployment/ingress-lb.yaml
+```
+
+Prerequisites: MicroK8s with `dns`, `storage`, `ingress`, and `metallb` add-ons enabled. Add `ollama.local`, `ai.local`, and `dashboard.local` to your `/etc/hosts` pointing at the MetalLB-assigned IP.
+
+GPU support is optional — uncomment the `nvidia.com/gpu: 1` resource limit in `ollama-stack.yaml` after running `microk8s enable gpu`.
 
 ## Demo
 
