@@ -4,6 +4,7 @@ title: Running a Local LLM on Kubernetes — A Home Lab Setup
 date: 2026-06-01
 authors: [suresh]
 tags: [local-llm, ollama, kubernetes, microk8s, open-source, home-lab]
+description: Part 2 of the local LLM series moves Ollama from bare-metal Linux into a MicroK8s cluster on an Intel NUC home lab server — covering StatefulSet deployment, Open-WebUI, MetalLB ingress, and the honest truth about running CPU-only inference on an AMD GPU machine.
 ---
 
 In [Part 1](/blog/local-llm-ollama-mcp-spike) I ran Ollama directly on a Linux machine and wired it up through an MCP layer to a small web app. It worked. But bare-metal has friction — if the process crashes, it stays down. Adding Open-WebUI means managing another process. Resource limits are manual. There's no clean internal networking between services.
