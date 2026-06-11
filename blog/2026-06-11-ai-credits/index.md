@@ -7,7 +7,7 @@ tags: [ai-credits, github-copilot, azure, cost-optimization, enterprise]
 description: How enterprises can cut AI token waste with complexity-based model routing and a dual-gateway architecture.
 ---
 
-Four months into 2026, Uber's AI budget was already gone. Thousands of engineers with un-gated access to Claude Code, bills running $500–$2,000 per person per month, and a CFO asking very loud questions about what exactly all those tokens were buying. Around the same time, an unnamed enterprise reportedly burned $500 million on Claude credits in a single month — not from a runaway model or a billing bug, but because nobody had thought to put a usage cap on employee licences.
+Uber made headlines this year for burning through its AI budget — thousands of engineers with un-gated access to Claude Code, bills reportedly running $500–$2,000 per person per month, and leadership asking very loud questions about what exactly all those tokens were buying. Around the same time, an unnamed "mystery company" reportedly burned $500 million on Claude credits in a single month — not from a runaway model or a billing bug, but because nobody had thought to put a usage cap on employee licences.
 
 Neither story is about bad engineering. Both are about one broken default: when developers get unrestricted access to frontier models, they use frontier models for everything.
 
@@ -149,7 +149,7 @@ The same tiering logic, extended one level further down.
 
 1. *Visual Studio Magazine*, "Copilot Billing Shock Hits Developers" (June 4, 2026)
 2. *InfoWorld*, "GitHub shifts Copilot to usage-based billing" (April 28, 2026)
-3. *Briefs Finance*, "Uber Torches Entire 2026 AI Budget on Claude Code in Four Months" (April 17, 2026)
+3. *AI Magazine*, ["Why Uber Has Already Burned Through Its AI Budget"](https://aimagazine.com/news/why-uber-has-already-burned-through-its-ai-budget)
 4. *Inc. Magazine*, "1 Company Spent Half a Billion Dollars on Claude in a Single Month" (June 5, 2026)
 5. *Tom's Hardware*, "Mystery company accidentally blew $500 million on Claude AI in a single month" (May 29, 2026)
 
