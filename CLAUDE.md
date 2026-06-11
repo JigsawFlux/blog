@@ -53,3 +53,16 @@ The only defined author is `suresh` (see `blog/authors.yml`). Add new authors th
 - **Mermaid diagrams** — enabled via `@docusaurus/theme-mermaid`; use fenced ` ```mermaid ` blocks directly in Markdown
 - **MDX** — posts support JSX/React components if needed
 - **RSS/Atom feeds** — auto-generated; don't break frontmatter `description` fields
+
+## GitHub Actions
+
+Three workflows are active:
+- **`deploy.yml`** — builds and deploys to `JigsawFlux/jigsawflux.github.io` on push to `main`
+- **`claude.yml`** — invokes Claude Code on issues/PRs when `@claude` is mentioned in a comment
+- **`claude-code-review.yml`** — automated PR code review
+
+## Notes
+
+- `onBrokenLinks: 'warn'` — `npm run build` will succeed even with broken links; check build output for warnings
+- The `blog/` directory is also an Obsidian vault; `.obsidian/` contains editor config that should not be modified
+- New posts start as raw Markdown files; add the required frontmatter block before the first `#` heading, not after
