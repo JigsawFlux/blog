@@ -457,20 +457,20 @@ Beyond the core phases, the design also supports additive extensions for low-res
 
 ## What's Next
 
-The full source — `graph.py`, `tools.py`, `app.py`, `seed_db.py`, and all architecture documentation — is on GitHub: [github.com/st185229/bedrocks-with-lang](https://github.com/st185229/bedrocks-with-lang).
+The full source — `graph.py`, `tools.py`, `app.py`, `seed_db.py`, and all architecture documentation — is on GitHub: [github.com/JigsawFlux/agentic-clinic](https://github.com/JigsawFlux/agentic-clinic).
 
 To run it locally:
 
 ```bash
-git clone https://github.com/st185229/bedrocks-with-lang
-cd bedrocks-with-lang
+git clone https://github.com/JigsawFlux/agentic-clinic
+cd agentic-clinic
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python seed_db.py
 streamlit run app.py
 ```
 
-You'll need AWS credentials and Bedrock model access for `us.anthropic.claude-haiku-4-5-20251001-v1:0` in `us-east-1`. The [README](https://github.com/st185229/bedrocks-with-lang/blob/main/README.md) has the full setup steps including the Bedrock console access request and a troubleshooting section for the two most common `ValidationException` and `ResourceNotFoundException` errors.
+You'll need AWS credentials and Bedrock model access for `us.anthropic.claude-haiku-4-5-20251001-v1:0` in `us-east-1`. The [README](https://github.com/JigsawFlux/agentic-clinic/blob/main/README.md) has the full setup steps including the Bedrock console access request and a troubleshooting section for the two most common `ValidationException` and `ResourceNotFoundException` errors.
 
 The four scenarios in the demo section are good starting points — emergency path, clarification loop, out-of-stock pharmacy substitution, and multilingual intake. Each exercises a different branch of the graph.
 
