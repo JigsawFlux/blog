@@ -13,7 +13,7 @@ The problem this POC targets is specific: small and charity hospitals where doct
 
 The premise here is simple. AI handles everything that doesn't require a clinician. The doctor steps in exactly once — to read the AI-produced intake summary and give a diagnosis. That's it. The prescription agent takes over from there.
 
-This is a [JigsawFlux](https://github.com/JigsawFlux) project. JigsawFlux builds open-source tools for health tech, crisis management, and humanitarian response — tools that have to work in the real world, not the well-funded one. That means two hard constraints shaped every architecture decision here: **cost** and **deployability**. Viable on a shoestring budget. Runnable in places where "cloud-native" isn't an option — a clinic with a single server, unreliable internet, and an IT team of one.
+This is a [JigsawFlux](https://github.com/JigsawFlux) project. JigsawFlux builds open-source tools for health tech, things that matters — tools that have to work in the real world, not the well-funded one. That means two hard constraints shaped every architecture decision here: **cost** and **deployability**. Viable on a shoestring budget. Runnable in places where "cloud-native" isn't an option — a clinic with a single server, unreliable internet, and an IT team of one.
 
 Built on **AWS Bedrock** (Claude Haiku 4.5), **LangGraph** for orchestration, **LangChain** `@tool` wrappers for data access, and **Streamlit** for the UI. Total cost: **< $0.01 per consultation**. Deployable on a £25/month VPS or a clinic's own hardware, with the option to go fully on-premises as models improve.
 
