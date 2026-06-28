@@ -70,7 +70,7 @@ The full source is at [github.com/JigsawFlux/comparing-agent-frameworks](https:/
 
 ## LangGraph: the stateful graph
 
-LangGraph models execution as a directed graph where nodes are functions and edges are routing decisions. State flows through every node as a typed dictionary — you define what it contains, and reducers control how it gets updated.
+LangGraph models execution as a directed graph where nodes are functions and edges are routing decisions. State flows through every node as a typed dictionary — you define what it contains, and reducers control how it gets updated. <sup>[[1]](#ref-1)</sup>
 
 The researcher loop is cyclic by design. It calls `web_search`, gets results back via the tool node, and loops until it decides it has enough information — at which point the conditional edge routes to the writer.
 
@@ -109,13 +109,13 @@ workflow.add_edge("writer", END)
 
 What you get from this: fine-grained control over every routing decision, complete visibility into state at every step, and trivial output extraction (`state["final_report"]`). What it costs: you are building a graph. The mental model is powerful but requires internalising nodes, edges, reducers, and the distinction between cyclic and acyclic topologies before you can be productive.
 
-**Agentic patterns this enables:** ReAct (the researcher loop is a ReAct loop), Plan-and-Execute, ReWOO, Reflexion, DAG pipelines, human-in-the-loop via `interrupt()`.
+**Agentic patterns this enables:** ReAct <sup>[[5]](#ref-5)</sup> (the researcher loop is a ReAct loop), Plan-and-Execute <sup>[[6]](#ref-6)</sup>, ReWOO <sup>[[7]](#ref-7)</sup>, Reflexion <sup>[[8]](#ref-8)</sup>, DAG pipelines, human-in-the-loop via `interrupt()`.
 
 ---
 
 ## CrewAI: declarative roles
 
-CrewAI inverts the mental model. Instead of defining a graph, you define **agents** with a role, goal, and backstory, and **tasks** with a description and expected output. Hand them to a `Crew` and it handles the orchestration.
+CrewAI inverts the mental model. Instead of defining a graph, you define **agents** with a role, goal, and backstory, and **tasks** with a description and expected output. Hand them to a `Crew` and it handles the orchestration. <sup>[[2]](#ref-2)</sup>
 
 ```python
 researcher = Agent(
@@ -174,7 +174,7 @@ This produced the richest research notes of the three runs: 9,351 characters ver
 
 ## AutoGen: conversation-based
 
-AutoGen treats agent coordination as a conversation. Each agent is a participant; they exchange messages, call tools, and signal completion via a termination string. There is no graph, no task object — just agents talking.
+AutoGen treats agent coordination as a conversation. Each agent is a participant; they exchange messages, call tools, and signal completion via a termination string. There is no graph, no task object — just agents talking. <sup>[[3]](#ref-3)[[9]](#ref-9)</sup>
 
 The pipeline runs in two separate phases. Phase 1 is the research conversation:
 
@@ -219,7 +219,7 @@ AutoGen's conversation-native model is best suited to topologies where agents ne
 
 ## Telemetry: what the runs produced
 
-All three ran against the same topic on the same hardware with `claude-sonnet-4-6`.
+All three ran against the same topic on the same hardware with `claude-sonnet-4-6`. <sup>[[12]](#ref-12)</sup>
 
 | Framework | Status | Time (s) | Notes (chars) | Report (chars) |
 | :--- | :--- | ---: | ---: | ---: |
@@ -239,7 +239,7 @@ This is worth pausing on because it reveals a real architectural difference. Lan
 
 ## A note on n8n
 
-LangGraph is sometimes compared to [n8n](https://n8n.io) — a visual, platform-managed workflow tool that also supports AI agents. Both can orchestrate multi-step agentic workflows, but they operate at different layers.
+LangGraph is sometimes compared to [n8n](https://n8n.io) — a visual, platform-managed workflow tool that also supports AI agents. Both can orchestrate multi-step agentic workflows, but they operate at different layers. <sup>[[4]](#ref-4)[[11]](#ref-11)</sup>
 
 | | LangGraph | n8n |
 | :--- | :--- | :--- |
@@ -285,10 +285,10 @@ All three have a free tier and run on hardware you already own. None require a c
 This comparison is the foundation for Part 2, which implements and benchmarks **agentic patterns** directly — using whichever framework is the natural fit for each:
 
 **Single-agent patterns**
-- **ReAct** — reason-act loops using LangGraph's cyclic edges
-- **Plan-and-Execute** — separate planning phase from execution
-- **ReWOO** — plan all tool calls upfront, then execute without intermediate observation
-- **Reflexion** — self-critique and iterative self-improvement
+- **ReAct** <sup>[[5]](#ref-5)</sup> — reason-act loops using LangGraph's cyclic edges
+- **Plan-and-Execute** <sup>[[6]](#ref-6)</sup> — separate planning phase from execution
+- **ReWOO** <sup>[[7]](#ref-7)</sup> — plan all tool calls upfront, then execute without intermediate observation
+- **Reflexion** <sup>[[8]](#ref-8)</sup> — self-critique and iterative self-improvement
 
 **Multi-agent topologies**
 - **Hierarchical** — orchestrator delegates to specialised sub-agents (CrewAI)
@@ -296,7 +296,41 @@ This comparison is the foundation for Part 2, which implements and benchmarks **
 - **Peer-to-peer network** — lateral agent communication without a central manager (AutoGen)
 - **Consensus/Joint** — multiple agents debate and converge on a shared answer (AutoGen)
 
-The project source is on GitHub: [github.com/JigsawFlux/comparing-agent-frameworks](https://github.com/JigsawFlux/comparing-agent-frameworks).
+The project source is on GitHub: [github.com/JigsawFlux/comparing-agent-frameworks](https://github.com/JigsawFlux/comparing-agent-frameworks). <sup>[[10]](#ref-10)</sup>
+
+---
+
+## References
+
+**Frameworks**
+
+<span id="ref-1">[1]</span> LangGraph — [langchain-ai/langgraph](https://github.com/langchain-ai/langgraph), GitHub.
+
+<span id="ref-2">[2]</span> CrewAI — [crewAIInc/crewAI](https://github.com/crewAIInc/crewAI), GitHub.
+
+<span id="ref-3">[3]</span> AutoGen — [microsoft/autogen](https://github.com/microsoft/autogen), GitHub.
+
+<span id="ref-4">[4]</span> n8n — [n8n.io](https://n8n.io), workflow automation platform.
+
+**Research papers**
+
+<span id="ref-5">[5]</span> Yao, S. et al. (2022). *ReAct: Synergizing Reasoning and Acting in Language Models*. [arXiv:2210.03629](https://arxiv.org/abs/2210.03629).
+
+<span id="ref-6">[6]</span> Wang, L. et al. (2023). *Plan-and-Solve Prompting: Improving Zero-Shot Chain-of-Thought Reasoning by Large Language Models*. [arXiv:2305.04091](https://arxiv.org/abs/2305.04091).
+
+<span id="ref-7">[7]</span> Xu, B. et al. (2023). *ReWOO: Decoupling Reasoning from Observations for Efficient Augmented Language Models*. [arXiv:2305.18323](https://arxiv.org/abs/2305.18323).
+
+<span id="ref-8">[8]</span> Shinn, N. et al. (2023). *Reflexion: Language Agents with Verbal Reinforcement Learning*. [arXiv:2303.11366](https://arxiv.org/abs/2303.11366).
+
+<span id="ref-9">[9]</span> Wu, Q. et al. (2023). *AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation Framework*. [arXiv:2308.08155](https://arxiv.org/abs/2308.08155).
+
+**Project sources**
+
+<span id="ref-10">[10]</span> JigsawFlux. *comparing-agent-frameworks* — [README.md](https://github.com/JigsawFlux/comparing-agent-frameworks/blob/main/README.md), framework comparison matrix and architecture overview.
+
+<span id="ref-11">[11]</span> JigsawFlux. *comparing-agent-frameworks* — [langgraph\_vs\_n8n.md](https://github.com/JigsawFlux/comparing-agent-frameworks/blob/main/langgraph_vs_n8n.md), architectural comparison of LangGraph and n8n.
+
+<span id="ref-12">[12]</span> JigsawFlux. *comparing-agent-frameworks* — telemetry from `python run.py --framework all --topic "solid-state batteries"` using `claude-sonnet-4-6` (2026-06-28). [github.com/JigsawFlux/comparing-agent-frameworks](https://github.com/JigsawFlux/comparing-agent-frameworks).
 
 ---
 
