@@ -1,6 +1,6 @@
 ---
 slug: comparing-agent-frameworks
-title: "LangGraph, CrewAI, and AutoGen: A Side-by-Side Comparison for Claude Agents"
+title: "Picking an Open-Source Agent Framework: LangGraph, CrewAI, and AutoGen"
 date: 2026-06-28
 authors: [suresh]
 tags: [langgraph, crewai, autogen, agents, claude, multi-agent, open-source]
