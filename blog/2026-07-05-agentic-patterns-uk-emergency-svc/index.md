@@ -137,7 +137,7 @@ Every pattern defines its own variant of this schema. The fields change — Refl
 
 ## Single-Agent Patterns
 
-### ReAct — Reason + Act
+### [ReAct](https://arxiv.org/abs/2210.03629) — Reason + Act
 
 ReAct interleaves reasoning and tool calls in a loop: reason about what to do, call a tool, observe the result, reason again. The loop runs until the agent decides it has enough information to produce a final answer. <sup>[[1]](#ref-1)</sup>
 
@@ -158,7 +158,7 @@ What ReAct does not do: it does not check its own output against protocol. It di
 
 ---
 
-### ReWOO — Reason Without Observation
+### [ReWOO](https://arxiv.org/abs/2305.18323) — Reason Without Observation
 
 ReWOO inverts the ReAct approach: instead of interleaving reasoning and tool calls, it plans all tool calls upfront in a single LLM step using placeholder variables (`#E1`, `#E2`, ...), then executes them in sequence without any intermediate LLM calls. <sup>[[2]](#ref-2)</sup>
 
@@ -186,7 +186,7 @@ The efficiency gain is real — approximately 60% fewer LLM calls than a compara
 
 ---
 
-### Reflexion — Generate, Critique, Revise
+### [Reflexion](https://arxiv.org/abs/2303.11366) — Generate, Critique, Revise
 
 Reflexion adds a critic loop to the generation cycle: a Generator agent proposes a plan, a Critic evaluates it against hardcoded safety protocols, and if the critique is not a `PASS`, the Generator revises. The loop runs up to 3 iterations or until the critic is satisfied. <sup>[[3]](#ref-3)</sup>
 
@@ -231,7 +231,7 @@ Total time: **~728 seconds** across 3 iterations. That is expensive. But it is t
 
 ---
 
-### Plan-and-Execute — Adaptive Replanning
+### [Plan-and-Execute](https://arxiv.org/abs/2305.04091) — Adaptive Replanning
 
 Plan-and-Execute separates planning from execution: a Planner generates a sequence of steps, an Executor runs them, and after each execution cycle a Replanner reviews whether the plan is complete or needs revising. <sup>[[4]](#ref-4)</sup>
 
@@ -251,7 +251,7 @@ ReWOO completed the same incident in 65 seconds by committing to a plan and not 
 
 ## Multi-Agent Topologies
 
-### Hierarchical — Supervisor and Specialists
+### [Hierarchical](https://langchain-ai.github.io/langgraph/concepts/multi_agent/#supervisor) — Supervisor and Specialists
 
 The Hierarchical pattern adds a Supervisor that routes to specialist sub-agents by name. After each specialist completes, control returns to the Supervisor, which decides whether to route to another specialist or finish.
 
@@ -282,7 +282,7 @@ Total time: **~160 seconds**.
 
 ---
 
-### DAG — Directed Acyclic Pipeline
+### [DAG](https://langchain-ai.github.io/langgraph/concepts/multi_agent/) — Directed Acyclic Pipeline
 
 The DAG pattern is a fixed linear pipeline: Triage → Resource Allocation → Traffic Coordinator → Compiler. No loops, no feedback edges, no revisiting previous nodes.
 
@@ -302,7 +302,7 @@ In a live incident, this gap would surface as a discrepancy between the triage p
 
 ---
 
-### Network / Peer-to-Peer — Lateral Coordination
+### [Network / Peer-to-Peer](https://langchain-ai.github.io/langgraph/concepts/multi_agent/#network) — Lateral Coordination
 
 The Network pattern has no supervisor. Fire Chief, Police Chief, and Medical Chief communicate directly with each other in a multi-turn conversational loop. Each agent can address any other agent by name and update its position based on peer statements.
 
@@ -324,7 +324,7 @@ The output at [outputs/report_network_p2p.md](https://github.com/JigsawFlux/agen
 
 ---
 
-### Consensus — Expert Debate and Voting
+### [Consensus](https://langchain-ai.github.io/langgraph/concepts/multi_agent/#custom-multi-agent-workflow) — Expert Debate and Voting
 
 The Consensus pattern runs three independent expert agents — Threat Analyst, Resource Chief, Public Safety Liaison — in parallel. Each scores the incident severity independently (1–5), then shares its reasoning with the other two. If scores converge within a defined threshold, consensus is declared. If not, a second round of debate runs.
 
