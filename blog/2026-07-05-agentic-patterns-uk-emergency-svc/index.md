@@ -223,7 +223,7 @@ def hitl_gate(state: ReflexionState) -> ReflexionState:
     return state
 ```
 
-The Synthesizer only runs if approval is granted. The final output — which you can read at [outputs/report_reflexion.md](outputs/report_reflexion.md) — is a 24-section, 11-unit dispatch order with full METHANE report, hospital routing matrix, approach route table, and escalation triggers. It is also the longest, most operationally detailed output of all 8 patterns by a significant margin.
+The Synthesizer only runs if approval is granted. The final output — which you can read at [outputs/report_reflexion.md](https://github.com/JigsawFlux/agentic-patterns/blob/main/outputs/report_reflexion.md) — is a 24-section, 11-unit dispatch order with full METHANE report, hospital routing matrix, approach route table, and escalation triggers. It is also the longest, most operationally detailed output of all 8 patterns by a significant margin.
 
 Total time: **~728 seconds** across 3 iterations. That is expensive. But it is the only pattern that caught a genuine protocol violation without being told where to look for it.
 
@@ -318,7 +318,7 @@ The Medical Chief updated the transport plan accordingly.
 
 After 2 rounds, all three chiefs had coordinated on the approach corridor, the hospital routing, and the escort requirement — without any central orchestrator directing the conversation.
 
-The output at [outputs/report_network_p2p.md](outputs/report_network_p2p.md) is the most realistic representation of inter-service coordination at Silver Command level. It is also the hardest to audit: the reasoning is distributed across message threads rather than concentrated in a single state machine. Replaying the decision logic requires reading the full conversation transcript, not inspecting a typed state dictionary.
+The output at [outputs/report_network_p2p.md](https://github.com/JigsawFlux/agentic-patterns/blob/main/outputs/report_network_p2p.md) is the most realistic representation of inter-service coordination at Silver Command level. It is also the hardest to audit: the reasoning is distributed across message threads rather than concentrated in a single state machine. Replaying the decision logic requires reading the full conversation transcript, not inspecting a typed state dictionary.
 
 **When to use it:** Scenarios requiring genuine lateral negotiation between domain experts — not command-and-control dispatch, but the Silver-level coordination phase where each service chief needs to hear the constraints of the others before committing. Total time: **~180 seconds** across 2 rounds.
 
