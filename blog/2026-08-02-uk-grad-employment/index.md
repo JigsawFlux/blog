@@ -219,7 +219,9 @@ The code is at [github.com/JigsawFlux/graduate-career-navigator](https://github.
 
 ## References
 
-[1] Office for National Statistics. *Public Opinions and Social Trends, Great Britain: 3 to 28 June 2026*. ONS, July 2026. https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/3to28june2026
+[1] Office for National Statistics. *Public Opinions and Social Trends, Great Britain: 3 to 28 June 2026*. ONS, July 2026. 
+https://www.ons.gov.uk/peoplepopulationandcommunity/wellbeing/bulletins/publicopinionsandsocialtrendsgreatbritain/june2026
+
 
 [2] Institute of Student Employers. *Graduate Labour Market Research, June 2026*. ISE, 2026. https://ise.org.uk/
 
